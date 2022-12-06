@@ -15,7 +15,9 @@ const optionsCORS = {
 }
 
 const app = express()
-
+app.get('/', (req,res)=>{
+    res.status(200).json({message:"hello world"})
+})
 app
     .use(cors(optionsCORS))
     .use(express.json())
