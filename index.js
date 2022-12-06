@@ -15,8 +15,8 @@ const optionsCORS = {
 }
 
 const app = express()
-app.on('/', (req,res)=>{
-    res.render('index.html')
+app.on('/test', (req,res)=>{
+    res.render('./html/index.html')
 })
 app
     .use(cors(optionsCORS))
